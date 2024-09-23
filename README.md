@@ -1,7 +1,7 @@
 # Asad Iqbal
 
 ## About Me
-I'm Asad Iqbal, a passionate software developer with a focus on mobile and web applications. I specialize in building modern, scalable solutions using React Native, Expo with extensive experience in project management, UI design, and integrating advanced features like in-app purchases, social authentication,Calendar Integrations, and map Integrations. I have successfully led and developed several applications for diverse industries including real estate, transportation, and healthcare.
+I'm Asad Iqbal, a passionate software developer focusing on mobile and web applications. I specialize in building modern, scalable solutions using React Native, and Expo with extensive experience in project management, UI design, and integrating advanced features like in-app purchases, social authentication, Calendar Integrations, and map Integrations. I have successfully led and developed several applications for diverse industries including real estate, transportation, E-Commerce, and healthcare.
 
 ---
 
@@ -9,7 +9,7 @@ I'm Asad Iqbal, a passionate software developer with a focus on mobile and web a
 - **Languages**: HTML, CSS, Javascript (ES6), Typescript
 - **Frameworks**: Expo, React Native, React
 - **DevOps**: GitHub Actions, GitHub TaskBoard, Google Play Console, App Store
-- **Other**: In App Purchases, Redux, Native Base, React Native Elements, Native Wind, React Native Paper
+- **Other**: In-App Purchases, Redux, Native Base, React Native Elements, Native Wind, React Native Paper
 
 ---
 
@@ -18,7 +18,7 @@ I'm Asad Iqbal, a passionate software developer with a focus on mobile and web a
 ### **PocketISAi**
 An AI-driven CRM tool utilizing OpenAI’s GPT-4 to automate communication with real estate leads, mimicking human interactions to boost engagement and conversion rates.
 
-- **Technologies**:  React Native,Python, Django, OpenAI GPT-4,
+- **Technologies**:  React Native, Python, Django, OpenAI GPT-4,
 - **Role**: Project Lead, React Native Developer
 - **Highlights**:
   - Designed the UI based on customer requirements.
