@@ -7,6 +7,7 @@ import Link from "next/link";
 // import ResumeLink from '../../../public/Asad-iqbal-resume.pdf'
 
 const HeroSection = () => {
+  const ImagePath=`${process?.env?.NEXT_PUBLIC_WEB_APP_DOMAIN}images/hero-image.png`
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -64,8 +65,9 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          {console.log(process.env.NEXT_PUBLIC_WEB_APP_DOMAIN)}
             <Image
-              src={`${process.env.BASE_URL}/images/hero-image.png`}
+              src={ImagePath}
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
