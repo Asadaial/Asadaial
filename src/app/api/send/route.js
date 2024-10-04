@@ -1,28 +1,33 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 const fromEmail = process.env.FROM_EMAIL;
+const APP_PASSWORD = process.env.APP_PASSWORD;
 
 export async function POST(req, res) {
   const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
   try {
-    const data = await resend.emails.send({
-      from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
-      react: (
-        <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: fromEmail,
+        pass: APP_PASSWORD,
+      },
     });
-    return NextResponse.json(data);
+
+    const mailOptions = {
+      from: email,
+      to: fromEmail, // Your Gmail to receive the messages
+      subject: `${email} ${subject}`,
+      text: `${message}
+      From: ${email}
+      `,
+    };
+    await transporter.sendMail(mailOptions);
+    return NextResponse.json({ success: true });
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ success: false, message: error.message });
   }
 }
