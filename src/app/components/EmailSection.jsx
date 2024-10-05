@@ -28,16 +28,21 @@ const EmailSection = () => {
       },
       body: JSONdata,
     };
+    try {
+      const response = await fetch(endpoint, options);
+      const resData = await response.json();
+      console.log(resData);
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+      if (response.status === 200) {
+        console.log("Message sent.");
+        setEmailSubmitted(true);
+      }
+      setLoading(false); // Stop loading after response
+    } catch (e) {
+    console.log("Error: " + JSON.stringify(e));
+    setLoading(false);
     }
-    setLoading(false); // Stop loading after response
+
   };
 
   return (
