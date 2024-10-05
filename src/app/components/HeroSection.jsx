@@ -7,7 +7,7 @@ import Link from "next/link";
 // import ResumeLink from '../../../public/Asad-iqbal-resume.pdf'
 
 const HeroSection = () => {
-  const ImagePath=`${process?.env?.NEXT_PUBLIC_WEB_APP_DOMAIN}images/dashboard/hero-image.png`
+  const ImagePath=`/images/dashboard/hero-image.png`
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
