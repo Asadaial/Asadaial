@@ -18,7 +18,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = `${process.env.NEXT_PUBLIC_WEB_APP_DOMAIN}api/send`;
+    const endpoint = `/api/send`;
     console.log(JSONdata);
 
     const options = {
