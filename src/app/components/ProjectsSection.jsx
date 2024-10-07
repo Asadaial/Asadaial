@@ -48,7 +48,7 @@ const projectsData = [
     image: `/images/projects/5.png`,
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://mindhug.io/",
   },
   {
     id: 6,
