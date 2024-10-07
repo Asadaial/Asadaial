@@ -54,7 +54,7 @@ const EmailSection = () => {
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-        If you’re looking for a developer who can turn your ideas into high-performing, user-friendly mobile apps, I’m here to help. Whether you need a solution to a complex challenge or want to elevate your current app, I’m ready to jump in. Let’s work together to bring your vision to life and solve the problems that matter to your business. My inbox is always open, and I’ll do my best to respond promptly!
+        Looking for a developer who can transform your ideas into high-performing, user-focused mobile apps? You’re in the right place. Whether it’s solving complex challenges or taking your existing app to the next level, I’m ready to deliver solutions that make an impact. Let’s collaborate to bring your vision to life and tackle the problems that matter most to your business. My inbox is always open, and you can count on a prompt and thoughtful response.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Asadaial/">
