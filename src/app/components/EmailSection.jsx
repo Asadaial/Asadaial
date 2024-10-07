@@ -54,7 +54,7 @@ const EmailSection = () => {
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+        If you’re looking for a developer who can turn your ideas into high-performing, user-friendly mobile apps, I’m here to help. Whether you need a solution to a complex challenge or want to elevate your current app, I’m ready to jump in. Let’s work together to bring your vision to life and solve the problems that matter to your business. My inbox is always open, and I’ll do my best to respond promptly!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Asadaial/">
@@ -83,7 +83,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="example@example.com"
               />
             </div>
             <div className="mb-6">

@@ -16,6 +16,8 @@ const TAB_DATA = [
         <li>NextJs</li>
         <li>Node.js</li>
         <li>Express</li>
+        <li>Python</li>
+        <li>Django</li>
 
 
       </ul>
@@ -31,16 +33,16 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>AWS Cloud Practitioner</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -60,12 +62,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React,NextJs, React Native,Expo, Redux, NodeJS, Express ,
-            HTML, CSS, Firebase, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I'm Asad Iqbal, a skilled mobile app developer with 3+ years of experience creating high-performance,
+            user-centric applications using React Native and Expo. My work spans multiple industries, 
+            including e-commerce, transportation, real estate, and healthcare, where I have led and contributed 
+            to projects that blend innovation with practicality. With a focus on seamless user experiences,
+             I excel in building apps that drive engagement and deliver business results.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -82,13 +83,13 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
