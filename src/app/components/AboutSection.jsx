@@ -62,11 +62,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I'm Asad Iqbal, a skilled mobile app developer with 3+ years of experience creating high-performance,
-            user-centric applications using React Native and Expo. My work spans multiple industries, 
-            including e-commerce, transportation, real estate, and healthcare, where I have led and contributed 
-            to projects that blend innovation with practicality. With a focus on seamless user experiences,
-             I excel in building apps that drive engagement and deliver business results.
+            I&apos;m Asad Iqbal, a mobile app developer with 3+ years of proven expertise in building high-performance, user-centric applications using React Native and Expo. Projects span across e-commerce, transportation, real estate, and healthcare, where delivering innovative solutions is a consistent priority. Focused on creating seamless user experiences, my work drives engagement while addressing key business challenges with precision and reliability.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
